@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/students")
+@RequestMapping("/students/getAllStudents")
 public class StudentApi {
 
     private List<Student> studentList;
@@ -30,4 +30,6 @@ public class StudentApi {
     public boolean addStudent(@RequestBody Student student) {
         return studentList.add(student);
     }
+
+
 }
